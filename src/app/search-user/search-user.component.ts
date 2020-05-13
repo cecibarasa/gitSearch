@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GitsearchComponent } from "../gitsearch/gitsearch.component";
 
 @Component({
   selector: 'app-search-user',
