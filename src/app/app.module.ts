@@ -4,6 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+// import { NgProgressModule } from '@ngx-progressbar/core';
+// import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { ProfileService } from "./profile.service";
+import { HttpClientModule, } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -14,9 +18,13 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // NgProgressModule,
+    // NgProgressHttpClientModule,
+    HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
