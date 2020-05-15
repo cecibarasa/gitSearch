@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from "../profile.service";
 import { HttpClient } from "@angular/common/http";
-import 'rxjs/operator/map';
+import 'rxjs-compat';
 
 
 @Component({
@@ -23,8 +23,12 @@ export class GitsearchComponent implements OnInit {
 
   ngOnInit(){
     this.profileService.getProfileInfo().subscribe(res => {
-        //console.log(res)
         this.user = res;
       })
+      this.profileService.gitRepos()
+      .subscribe(data => {
+        this.repos = data;
+      })
   }
-  }
+  
+}

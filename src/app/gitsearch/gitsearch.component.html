@@ -1,5 +1,37 @@
 <div class="container-fluid">
 
     <h1>GitHub Search</h1>
-    <p>{{user.followers}}</p>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="{{user.avatar_url}}" alt="avatar_url">
+                <p>{{user.name}}</p>
+                <span class="label label-info">Followers  {{user.followers}}</span>
+                <span class="label label-warning">Following  {{user.following}}</span>
+                <span class="label label-success"> location {{user.location}}</span>
+                <span class="label label-default"> Created In {{user.created_at}}</span>
+                <span class="label label-default"> Repositories {{user.public_repos}}</span>
+                <a href="{{user.email}}"><button type="button" class="btn btn-danger">Email</button></a>
+            </div>
+
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="column">
+
+                    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id=" myScrollspy">
+                        <div *ngFor="let repo of repos ">
+                            <div class="nav nav-pills nav-stacked">
+
+                                <h4><a href="{{repo.html_url}} " target="_blank ">{{repo.name}}</a></h4>
+                                <p>{{repo.description}}</p>
+
+                            </div>
+                        </div>
+                    </body>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
