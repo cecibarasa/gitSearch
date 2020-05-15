@@ -1,1 +1,10 @@
-<p>repositories works!</p>
+<div class="jumbotron">
+    <h1 class="display-4 text-center">Repositories</h1>
+    <hr class="my-4">
+    <p class="lead text-center">Search</p>
+    <form action="" class="search-form">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="repository" name="repository" (keyup)="findRepo()">
+        </div>
+    </form>
+</div>

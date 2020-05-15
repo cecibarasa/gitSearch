@@ -7,8 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-// import { NgProgressModule } from '@ngx-progressbar/core';
-// import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+//import { NgProgressModule } from '@ngx-progressbar/core';
+//import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { ProfileService } from "./profile.service";
 import { RepositoriesComponent } from './repositories/repositories.component';
 
@@ -24,8 +24,8 @@ import { RepositoriesComponent } from './repositories/repositories.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // NgProgressModule,
-    // NgProgressHttpClientModule,
+    //NgProgressModule.forRoot(),,
+    /////NgProgressHttpClientModule,
     HttpClientModule,
     FormsModule
     
