@@ -1,13 +1,12 @@
 <div class="container-fluid">
+    <h1>GitHub Search</h1>
     <form action="" class="search-form">
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
         </div>
     </form>
-    <h1>GitHub Search</h1>
-
     <div class="row">
-        <div class="column">
+        <div class="col-md-5">
             <div class="card">
                 <img src="{{user.avatar_url}}" alt="avatar_url">
                 <p>{{user.name}}</p>
@@ -16,12 +15,12 @@
                 <span class="label label-success"> location {{user.location}}</span>
                 <span class="label label-default"> Created In {{user.created_at}}</span>
                 <span class="label label-default"> Repositories {{user.public_repos}}</span>
-                <a href="{{user.email}}"><button type="button" class="btn btn-danger">Email</button></a>
+                <a href="{{user.html_url}}"><button type="button" class="btn btn-danger">View On GitHub</button></a>
             </div>
 
         </div>
 
-        <div class="column">
+        <div class="col-md-6">
             <div class="card">
                 <div class="column">
 

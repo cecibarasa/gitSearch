@@ -10,6 +10,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 // import { NgProgressModule } from '@ngx-progressbar/core';
 // import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { ProfileService } from "./profile.service";
+import { RepositoriesComponent } from './repositories/repositories.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { ProfileService } from "./profile.service";
     AppComponent,
     GitsearchComponent,
     NavBarComponent,
+    RepositoriesComponent,
     
   ],
   imports: [
