@@ -20,8 +20,9 @@ export class GitsearchComponent implements OnInit {
       
     // })
   }
-
+  
   ngOnInit(){
+    
     this.profileService.getProfileInfo().subscribe(res => {
         this.user = res;
       })
@@ -29,6 +30,23 @@ export class GitsearchComponent implements OnInit {
       .subscribe(data => {
         this.repos = data;
       })
+      
   }
   
+  findProfile() {
+    this.profileService.updateProfile(this.username);
+
+    this.profileService.getProfileInfo()
+      .subscribe(res => {
+        //console.log(res)
+        this.user = res;
+      })
+
+    this.profileService.gitRepos()
+      .subscribe(data => {
+        //console.log(data)
+        this.repos = data;
+      })
+  }
+
 }

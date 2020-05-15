@@ -1,6 +1,11 @@
 <div class="container-fluid">
-
+    <form action="" class="search-form">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        </div>
+    </form>
     <h1>GitHub Search</h1>
+
     <div class="row">
         <div class="column">
             <div class="card">

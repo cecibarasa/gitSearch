@@ -18,11 +18,16 @@ export class ProfileService {
     this.username = "cecibarasa";
     
   }
+  
   getProfileInfo(){
     return this.http.get(environment.apiUrl + this.username + "?access_token=" + environment.Git_secret).map(result => result)
   }
   gitRepos() {
     return this.http.get(environment.apiUrl + this.username + "/repos" + "?access_token=" + environment.Git_secret).map(result => result)
+  }
+
+  updateProfile(username:string){
+    this.username = username
   }
    
 }
