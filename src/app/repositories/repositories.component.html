@@ -18,7 +18,7 @@
                     </div>
                     <div class="panel-body " *ngFor="let repo of repos">
                         <p class="clearfix ">
-                            {{repo.name}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-md btn-info pull-right ">View this project on github</a>
+                            {{repo.name|titlecase}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-md btn-info pull-right ">View this project on github</a>
                         </p>
                         <p>{{repo.description}}</p>
                     </div>

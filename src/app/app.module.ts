@@ -13,6 +13,7 @@ import { ProfileService } from "./profile.service";
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TitleCasePipe } from './title-case.pipe';
+import { ChangeColorDirective } from './change-color.directive';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TitleCasePipe } from './title-case.pipe';
     RepositoriesComponent,
     NotFoundComponent,
     TitleCasePipe,
+    ChangeColorDirective,
     
   ],
   imports: [
