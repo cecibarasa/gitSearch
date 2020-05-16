@@ -15,7 +15,7 @@ export class ProfileService {
 
   constructor( private http:HttpClient) { 
     console.log("iriz waririz");
-    this.username = "cecibarasa";
+    this.username = "moringaschool";
     
   }
   
@@ -30,21 +30,26 @@ export class ProfileService {
     this.username = username
   }
    
-}
+
+// getProfileInfo(){
+//   interface ApiResponse{
+//   username: string;
+    
+//   }
 // let promise = new Promise((resolve,reject)=>{
-//   this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
-//     this.quote.quote = response.quote
-//     this.quote.author = response.author
+//   this.http.get<ApiResponse>(environment.apiUrl + this.username + "/repos" + "?access_token" + environment.Git_secret).toPromise().then(response=>{
 
 //     resolve()
+//     this.username
 //   },
 //   error=>{
-//     this.quote.quote = "Never, never, never give up"
-//     this.quote.author = "Winston Churchill"
+//     this.username = "Never, never, never give up"
+//     this.username = "Winston Churchill"
 
 //     reject(error)
 //   })
 // })
 // return promise
 // }
-// }
+}
+

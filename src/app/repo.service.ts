@@ -24,7 +24,26 @@ export class RepoService {
   
   updateRepo(repos: any){
     this.repos = repos;
+
   
+}
+getRepo(){
+  interface ApiResponse{
+    
+  }
+let promise = new Promise((resolve,reject)=>{
+  this.http.get<ApiResponse>(environment.apiUrl + this.username + "/repos" + "?access_token" + environment.Git_secret).toPromise().then(response=>{
+
+    resolve()
+  },
+  error=>{
+    this.username = "Never, never, never give up"
+    this.username = "Winston Churchill"
+
+    reject(error)
+  })
+})
+return promise
 }
 updateProfile(username:string){
   this.username = username

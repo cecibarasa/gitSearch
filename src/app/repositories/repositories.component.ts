@@ -16,7 +16,7 @@ export class RepositoriesComponent implements OnInit {
   user: any = [];
   public username: string;
   constructor(public reposService: RepoService, private http: HttpClient, public profileService: ProfileService) { 
-    this.username = "cecibarasa"
+    this.username = "moringaschool"
   }
 
   ngOnInit() {
