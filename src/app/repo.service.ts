@@ -7,16 +7,26 @@ import {environment } from '../environments/environment';
   providedIn: 'root'
 })
 export class RepoService {
-  private repos: [];
-  private apiUrl: string = 'https://api.github.com/';
+  public repos: [];
+  private username: string;
 
-  constructor(private http:HttpClient) { }
+  //private apiUrl: string = 'https://api.github.com/repositories/';
 
+  constructor(private http:HttpClient) { 
+    this.username = "cecibarasa";
+  }
+  getProfileInfo(){
+    return this.http.get(environment.apiUrl + this.username + "?access_token=" + environment.Git_secret).map(result => result)
+  }
   gitRepos() {
-    return this.http.get(environment.apiUrl + "/repos" + "?access_token=" + environment.Git_secret).map(result => result)
-
+    return this.http.get(environment.apiUrl + this.username + "/repos" + "?access_token=" + environment.Git_secret).map(result => result)
   }
-  updateRepo(repos){
-    this.repos = repos
-  }
+  
+  updateRepo(repos: any){
+    this.repos = repos;
+  
+}
+updateProfile(username:string){
+  this.username = username
+}
 }

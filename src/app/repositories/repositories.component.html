@@ -1,10 +1,28 @@
-<div class="jumbotron">
+<div class="container-fluid">
     <h1 class="display-4 text-center">Repositories</h1>
     <hr class="my-4">
     <p class="lead text-center">Search</p>
     <form action="" class="search-form">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="repository" name="repository" (keyup)="findRepo()">
+            <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
         </div>
     </form>
+    <div class="col-md-9 " id="card1">
+        <div class="card ">
+            <div class="column ">
+
+                <div class="panel panel-default ">
+                    <div class="panel-heading ">
+                        <h3 class="panel-title ">Repos</h3>
+                    </div>
+                    <div class="panel-body " *ngFor="let repo of repos ">
+                        <p class="clearfix ">
+                            {{repo.name}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-sm btn-warning pull-right ">View this project on github</a>
+                        </p>
+                        <p>{{repo.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

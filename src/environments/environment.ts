@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiUrl: "https://api.github.com/users/",
-  Git_secret : "730b2ceaf77b78eefc09fac069d93a5a203243eb"
+  Git_secret : "730b2ceaf77b78eefc09fac069d93a5a203243eb",
+  Url: 'https://api.github.com/repos/users'
 };
 
 /*

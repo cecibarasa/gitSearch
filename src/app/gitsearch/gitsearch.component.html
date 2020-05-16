@@ -11,32 +11,44 @@
             <div class="card">
                 <img src="{{user.avatar_url}}" alt="avatar_url">
                 <p>{{user.name}}</p>
-                <span class="label label-info">Followers  {{user.followers}}</span>
-                <span class="label label-warning">Following  {{user.following}}</span>
-                <span class="label label-success"> location {{user.location}}</span>
-                <span class="label label-default"> Created In {{user.created_at}}</span>
-                <span class="label label-default"> Repositories {{user.public_repos}}</span>
-                <a href="{{user.html_url}}"><button type="button" class="btn btn-danger">View On GitHub</button></a>
+                <p>
+                    <span class="label label-warning">{{user.followers}} Followers</span>
+                    <span class="label label-primary">Following {{user.following}}</span>
+                    <span class="label label-success">{{user.public_gists}} Public gists</span>
+                    <span class="label label-info">{{user.public_repos}} Public Repos</span>
+                </p>
+                <p><a href="{{user.html_url}}" target="_blank" class="btn btn-danger btn-sm">View profile on github</a></p>
             </div>
 
         </div>
 
-        <div class="col-md-6">
-            <div class="card">
-                <div class="column">
+        <div class="col-md-7 ">
+            <div class="card ">
+                <div class="column ">
 
-                    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id=" myScrollspy">
-                        <div *ngFor="let repo of repos ">
-                            <div class="nav nav-pills nav-stacked">
-
-                                <h4><a href="{{repo.html_url}} " target="_blank ">{{repo.name}}</a></h4>
-                                <p>{{repo.description}}</p>
-
-                            </div>
+                    <div class="panel panel-default ">
+                        <div class="panel-heading ">
+                            <h3 class="panel-title ">Repos</h3>
                         </div>
-                    </body>
+                        <div class="panel-body " *ngFor="let repo of repos ">
+                            <p class="clearfix ">
+                                {{repo.name}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-sm btn-warning pull-right ">View this project on github</a>
+                            </p>
+                            <p>{{repo.description}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $("body").scrollspy({
+            target: "myScrollspy",
+            offset: 20
+        })
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

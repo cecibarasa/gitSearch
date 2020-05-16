@@ -32,21 +32,15 @@ export class GitsearchComponent implements OnInit {
       })
       
   }
-  
-  findProfile() {
-    this.profileService.updateProfile(this.username);
-
-    this.profileService.getProfileInfo()
-      .subscribe(res => {
-        //console.log(res)
-        this.user = res;
-      })
-
+  findProfile(){
+    this.profileService.updateProfile(this.username)
+    this.profileService.getProfileInfo().subscribe(res => {
+      this.user = res;
+    })
     this.profileService.gitRepos()
-      .subscribe(data => {
-        //console.log(data)
-        this.repos = data;
-      })
+    .subscribe(data => {
+      this.repos = data;
+    })
   }
-
+  
 }
