@@ -4,6 +4,7 @@ import { HttpClient } from "@angular/common/http";
 import 'rxjs-compat';
 import { Repo } from "../repo";
 import { ProfileService } from "../profile.service";
+// import { ProfileRequestService } from "../profile-request.service";
 
 @Component({
   selector: 'app-repositories',

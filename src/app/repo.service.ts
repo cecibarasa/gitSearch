@@ -31,19 +31,20 @@ getRepo(){
   interface ApiResponse{
     
   }
-let promise = new Promise((resolve,reject)=>{
-  this.http.get<ApiResponse>(environment.apiUrl + this.username + "/repos" + "?access_token" + environment.Git_secret).toPromise().then(response=>{
+// let promise = new Promise((resolve,reject)=>{
+//   this.http.get<ApiResponse>(environment.apiUrl + this.username + "/repos" + "?access_token" + environment.Git_secret).toPromise().then(response=>{
 
-    resolve()
-  },
-  error=>{
-    this.username = "Never, never, never give up"
-    this.username = "Winston Churchill"
+//     resolve()
+//   },
+//   error=>{
+//     this.username = "Never, never, never give up"
+//     this.username = "Winston Churchill"
 
-    reject(error)
-  })
-})
-return promise
+//     reject(error)
+//   })
+// })
+// return promise
+// }
 }
 updateProfile(username:string){
   this.username = username

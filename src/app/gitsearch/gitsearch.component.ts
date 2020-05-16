@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileService } from "../profile.service";
 import { HttpClient } from "@angular/common/http";
 import 'rxjs-compat';
+//import { ProfileRequestService } from "../profile-request.service";
 
 
 @Component({

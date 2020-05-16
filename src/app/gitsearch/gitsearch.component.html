@@ -1,6 +1,8 @@
 <div class="container-fluid">
     <!-- <ng-progress></ng-progress> -->
-    <h1>GitHub Search</h1>
+    <h1>
+        <strong>GitHub Search</strong>
+    </h1>
     <form action="" class="search-form">
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
@@ -11,7 +13,7 @@
             <div class="card">
                 <img src="{{user.avatar_url}}" alt="avatar_url">
                 <p>{{user.name}}</p>
-                <hr class="my-4">
+
                 <p>
                     <span class="label label-warning">{{user.followers}} Followers</span>
                     <span class="label label-primary">Following {{user.following}}</span>
