@@ -12,6 +12,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProfileService } from "./profile.service";
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NavBarComponent,
     RepositoriesComponent,
     NotFoundComponent,
+    TitleCasePipe,
     
   ],
   imports: [
