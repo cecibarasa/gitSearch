@@ -1,18 +1,20 @@
-import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
+import { Directive, ElementRef, Input, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appChangeColor]'
 })
 export class ChangeColorDirective {
 
-  constructor(private element: ElementRef, private renderer: Renderer2) { 
-    this.changeColor;
-  }
+  constructor(private elem: ElementRef) { }
+    @Input() changeColor: string
   @HostListener('click') onClick(){
-    this.changeColor('green');
+    this.textDeco('black');
+  }
+    @HostListener('click') Click(){
+      this.textDeco('none');
 }
-changeColor(color: string){
-  this.element.nativeElement.style.textColor=this.changeColor;  
-}
+private textDeco(color:string) {
+  this.elem.nativeElement.style.background = this.changeColor;
 
+}
 }

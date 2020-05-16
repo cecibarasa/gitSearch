@@ -11,13 +11,13 @@
                 <img src="{{user.avatar_url}} " alt="avatar_url " class="img-circle img-responsive">
                 <p>{{user.name}}</p>
 
-                <p>
-                    <span class="label label-warning ">{{user.followers}} Followers</span>
-                    <span class="label label-primary ">Following {{user.following}}</span>
-                    <span class="label label-success ">{{user.public_gists}} Public gists</span>
-                    <span class="label label-info ">{{user.public_repos}} Public Repos</span>
-                </p>
-                <p><a href="{{user.html_url}} " target="_blank " class="btn btn-danger btn-sm ">View profile on github</a></p>
+                <ul style="font-size: 20px;">
+                    <li>{{user.followers}} Followers</li>
+                    <li>Following {{user.following}}</li>
+                    <li>{{user.public_gists}} Public gists</li>
+                    <li>{{user.public_repos}} Public Repos</li>
+                </ul>
+                <h5><a href="{{user.html_url}} " target="_blank " class="btn btn-danger btn-md ">View profile on github</a></h5>
             </div>
 
         </div>
@@ -34,14 +34,21 @@
                             <h3>
                                 {{repo.name|titlecase}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-sm btn-warning pull-right ">View this project on github</a>
                             </h3>
-                            <p style="font-size: 20px;">{{repo.description}}</p>
-                        </div>
+                            <p style="font-size: 20px; ">{{repo.description}}</p>
+                            <hr style="height:2px;width:50%;color:gray;background-color:gray">
+                            <ul>
+                                <li style=" font-size: 20px; float: left; ">
+                                    {{repo.language}}
+                                </li>
+                            </ul>
+                        </div>i
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <script>
     $(document).ready(function() {
         $("body ").scrollspy({
