@@ -5,22 +5,22 @@
     </h1>
     <form action="" class="search-form">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+            <input type=" text " class="form-control " placeholder="Search git users with username " [(ngModel)]="username " name="username " (keyup)="findProfile() ">
         </div>
     </form>
-    <div class="row">
-        <div class="col-md-5">
-            <div class="card">
-                <img src="{{user.avatar_url}}" alt="avatar_url">
+    <div class="row ">
+        <div class="col-md-5 ">
+            <div class="card ">
+                <img src="{{user.avatar_url}} " alt="avatar_url ">
                 <p>{{user.name}}</p>
 
                 <p>
-                    <span class="label label-warning">{{user.followers}} Followers</span>
-                    <span class="label label-primary">Following {{user.following}}</span>
-                    <span class="label label-success">{{user.public_gists}} Public gists</span>
-                    <span class="label label-info">{{user.public_repos}} Public Repos</span>
+                    <span class="label label-warning ">{{user.followers}} Followers</span>
+                    <span class="label label-primary ">Following {{user.following}}</span>
+                    <span class="label label-success ">{{user.public_gists}} Public gists</span>
+                    <span class="label label-info ">{{user.public_repos}} Public Repos</span>
                 </p>
-                <p><a href="{{user.html_url}}" target="_blank" class="btn btn-danger btn-sm">View profile on github</a></p>
+                <p><a href="{{user.html_url}} " target="_blank " class="btn btn-danger btn-sm ">View profile on github</a></p>
             </div>
 
         </div>
@@ -47,11 +47,11 @@
 </div>
 <script>
     $(document).ready(function() {
-        $("body").scrollspy({
-            target: "myScrollspy",
+        $("body ").scrollspy({
+            target: "myScrollspy ",
             offset: 20
         })
     });
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js "></script>

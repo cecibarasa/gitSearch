@@ -14,6 +14,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { ChangeColorDirective } from './change-color.directive';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ChangeColorDirective } from './change-color.directive';
     NotFoundComponent,
     TitleCasePipe,
     ChangeColorDirective,
+    LandingPageComponent,
     
   ],
   imports: [
