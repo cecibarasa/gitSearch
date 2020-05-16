@@ -1,8 +1,5 @@
 <div class="container-fluid git">
     <!-- <ng-progress></ng-progress> -->
-    <h1>
-        <strong>GitHub Search</strong>
-    </h1>
     <form action="" class="search-form">
         <div class="form-group">
             <input type=" text " class="form-control " placeholder="Search git users with username " [(ngModel)]="username " name="username " (keyup)="findProfile() ">
@@ -11,7 +8,7 @@
     <div class="row ">
         <div class="col-md-5 ">
             <div class="card ">
-                <img src="{{user.avatar_url}} " alt="avatar_url ">
+                <img src="{{user.avatar_url}} " alt="avatar_url " class="img-circle img-responsive">
                 <p>{{user.name}}</p>
 
                 <p>
@@ -34,10 +31,10 @@
                             <h3 class="panel-title ">Repos</h3>
                         </div>
                         <div class="panel-body " *ngFor="let repo of repos ">
-                            <p class="clearfix ">
+                            <h3>
                                 {{repo.name|titlecase}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-sm btn-warning pull-right ">View this project on github</a>
-                            </p>
-                            <p>{{repo.description}}</p>
+                            </h3>
+                            <p style="font-size: 20px;">{{repo.description}}</p>
                         </div>
                     </div>
                 </div>
