@@ -1,6 +1,6 @@
 [![codebeat badge](https://codebeat.co/badges/fb3f3fac-a3d5-4022-b1d9-2729d27ab048)](https://codebeat.co/projects/github-com-cecibarasa-gitsearch-master)
 
-https://forthebadge.com/images/badges/built-by-developers.svg
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/cecibarasa/)
 
 # GitSearch
 
