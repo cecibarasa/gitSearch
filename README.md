@@ -1,7 +1,5 @@
 [![codebeat badge](https://codebeat.co/badges/fb3f3fac-a3d5-4022-b1d9-2729d27ab048)](https://codebeat.co/projects/github-com-cecibarasa-gitsearch-master)
 
-[![ForTheBadge built-with-cecibarasa](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/cecibarasa/)
-
 # GitSearch
 
 ## By Cecilia Barasa
@@ -22,6 +20,9 @@ This is a WebApplication that enables a user to search for any GitHub profile an
 * `TYPESCRIPT`
 * `ANGULAR`
 * `JAVASCRIPT`
+
+[![ForTheBadge built-with-cecibarasa](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/cecibarasa/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/cecibarasa/)
+
 ## [License](https://github.com/cecibarasa/gitSearch/blob/master/license.md)
 
 ## [Support and contact details](https://www.linkedin.com/in/cecilia-barasa-4a8311195/)
