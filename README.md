@@ -18,6 +18,6 @@ This is a WebApplication that enables a user to search for any GitHub profile an
 * `TYPESCRIPT`
 * `ANGULAR`
 * `JAVASCRIPT`
-
+## [License](https://github.com/cecibarasa/gitSearch/blob/master/license.md)
 
 ## [Support and contact details](https://www.linkedin.com/in/cecilia-barasa-4a8311195/)
