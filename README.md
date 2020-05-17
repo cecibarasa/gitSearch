@@ -23,6 +23,6 @@ This is a WebApplication that enables a user to search for any GitHub profile an
 
 [![ForTheBadge built-with-cecibarasa](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/cecibarasa/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/cecibarasa/)
 
-## [License](https://github.com/cecibarasa/gitSearch/blob/master/license.md)
+## [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]
 
 ## [Support and contact details](https://www.linkedin.com/in/cecilia-barasa-4a8311195/)
