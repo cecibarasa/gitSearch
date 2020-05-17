@@ -21,7 +21,7 @@ This is a WebApplication that enables a user to search for any GitHub profile an
 * `ANGULAR`
 * `JAVASCRIPT`
 
-[![ForTheBadge built-with-cecibarasa](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/cecibarasa/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/cecibarasa/)
+[![cecibarasa](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/cecibarasa/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/cecibarasa/)
 
 ## [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/cecibarasa/gitSearch/blob/master/license.md)
 
