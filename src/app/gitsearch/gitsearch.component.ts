@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ProfileService } from "../profile.service";
 import { HttpClient } from "@angular/common/http";
 import 'rxjs-compat';
+
 //import { ProfileRequestService } from "../profile-request.service";
 
 
@@ -14,6 +15,13 @@ export class GitsearchComponent implements OnInit {
   user: any = [];
   repos: any = [];
   username: string;
+
+  // newuser = new username("");
+  // @Output() addUser = new EventEmitter<user>();
+
+  // submitUser() {
+  //   this.addUser.emit(this.newuser);
+  // }
 
   constructor(public profileService: ProfileService, private http: HttpClient) { 
     // this.profileService.getProfileInfo().subscribe(profile => {

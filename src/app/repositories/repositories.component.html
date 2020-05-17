@@ -3,9 +3,10 @@
         <strong>Repositories</strong></h1>
     <hr class="my-4">
     <p class="lead text-center">Search</p>
-    <form action="" class="search-form">
+    <form action="" class="search-form md">
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+            <button class="btn btn-warning" type="submit" id="searchButton"> Search</button>
         </div>
     </form>
     <div class="col-md-9 " id="card1">
@@ -16,11 +17,17 @@
                     <div class="panel-heading">
                         <h3 class="panel-title ">Repositories</h3>
                     </div>
-                    <div class="panel-body " *ngFor="let repo of repos">
-                        <p class="clearfix ">
-                            {{repo.name|titlecase}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-md btn-info pull-right ">View this project on github</a>
-                        </p>
-                        <p>{{repo.description}}</p>
+                    <div class="panel-body " *ngFor="let repo of repos ">
+                        <h3>
+                            Title: {{repo.name|titlecase}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-sm btn-warning pull-right ">View this project on github</a>
+                        </h3>
+                        <p style="font-size: 20px; "> Description: {{repo.description}}</p>
+                        <hr style="height:2px;width:50%;color:gray;background-color:gray">
+                        <ul>
+                            <li style=" font-size: 20px; float: left; ">
+                                {{repo.language}}
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
