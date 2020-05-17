@@ -12,7 +12,7 @@
             <div class="card ">
                 <p>User Profile</p>
                 <img src="{{user.avatar_url}} " alt="avatar_url " class="img-circle img-responsive">
-                <p>{{user.name}}</p>
+                <p>{{user.name|titlecase}}</p>
 
                 <ul style="font-size: 20px;">
                     <li>{{user.followers}} Followers</li>
@@ -37,7 +37,7 @@
                             <h3>
                                 Title: {{repo.name|titlecase}} <a href="{{repo.html_url}} " target="_blank " class="btn btn-md btn-warning pull-right ">View this project on github</a>
                             </h3>
-                            <p style="font-size: 20px; "> Description: {{repo.description}}</p>
+                            <p style="font-size: 20px; "> Description: {{repo.description|titlecase}}</p>
                             <hr style="height:2px;width:50%;color:gray;background-color:gray">
                             <ul>
                                 <li style=" font-size: 20px; float: left; ">

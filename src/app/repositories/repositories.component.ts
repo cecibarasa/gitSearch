@@ -21,9 +21,9 @@ export class RepositoriesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.profileService.getProfileInfo().subscribe(res => {
-      this.user = res;
-    })
+    // this.profileService.getProfileInfo().subscribe(res => {
+    //   this.user = res;
+    // })
     this.profileService.gitRepos()
     .subscribe(data => {
       this.repos = data;

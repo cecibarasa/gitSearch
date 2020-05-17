@@ -21,6 +21,10 @@ export class RepoService {
   gitRepos() {
     return this.http.get(environment.apiUrl + this.username + "/repos" + "?access_token=" + environment.Git_secret).map(result => result)
   }
+// gitRepos(){
+//   return this.http.get(environment.apiUrl +this.username + "/repos?order=created&sort=asc?access_token=" +environment.Git_secret).map(result => result)
+// }
+  //https://api.github.com/users/'+ this.username+ "/repos?order=created&sort=asc?access_token="+environment.Git_secret
   
   updateRepo(repos: any){
     this.repos = repos;
